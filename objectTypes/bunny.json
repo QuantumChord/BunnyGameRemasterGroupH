@@ -84,6 +84,41 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 199,
+						"height": 235,
+						"originX": 0.5025125628140703,
+						"originY": 0.502127659574468,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5194131,
+						"collisionPoly": {
+							"points": [
+								0.005025125628140704,
+								0.00425531914893617,
+								1,
+								0.00425531914893617,
+								1,
+								1,
+								0.005025125628140704,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 343161186043507,
+				"name": "Yuck!",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

@@ -43,6 +43,121 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 132,
+						"height": 58,
+						"originX": 0.7803030303030303,
+						"originY": 0.46551724137931033,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5892352,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 931149752327988,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 132,
+						"height": 58,
+						"originX": 0.7803030303030303,
+						"originY": 0.46551724137931033,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5557331,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 492801200287240,
+				"name": "Animation 3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 132,
+						"height": 58,
+						"originX": 0.7803030303030303,
+						"originY": 0.46551724137931033,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7161026,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 476456743459997,
+				"name": "Animation 4",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 132,
+						"height": 58,
+						"originX": 0.7803030303030303,
+						"originY": 0.46551724137931033,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1064322,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 115277712632713,
+				"name": "Animation 5",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 132,
+						"height": 58,
+						"originX": 0.7803030303030303,
+						"originY": 0.46551724137931033,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6669108,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 744922331176883,
+				"name": "Animation 6",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

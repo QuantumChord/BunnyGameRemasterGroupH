@@ -3,6 +3,16 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "RandomizationValue",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 108054370237587
+		},
+		{
+			"eventType": "variable",
 			"name": "foodOnScreenAmount",
 			"type": "number",
 			"initialValue": "0",
@@ -10,6 +20,46 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 432750423282044
+		},
+		{
+			"eventType": "variable",
+			"name": "GoodItem",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 953358127560023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 660207169699629
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 303819627479895,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"value": "choose(0, 1, 2, 3, 4 ,5)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 242958237169430,
+					"parameters": {
+						"text": "\"Score = \" & bunny.Score"
+					}
+				}
+			],
+			"sid": 966371072192293
 		},
 		{
 			"eventType": "block",
@@ -134,6 +184,16 @@
 					"parameters": {
 						"instance-variable": "Release"
 					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 219224079112803,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -146,6 +206,24 @@
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "food",
+					"sid": 507307001857873,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 923752859457456,
+					"parameters": {
+						"variable": "GoodItem",
+						"value": "true"
 					}
 				},
 				{
@@ -186,6 +264,461 @@
 				}
 			],
 			"sid": 624890213469740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hand",
+					"sid": 928976857053064,
+					"parameters": {
+						"instance-variable": "Release"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 333830133039952,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "hand",
+					"sid": 467866054273586,
+					"parameters": {
+						"object": "food",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "food",
+					"sid": 344144755554803,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 116290634124776,
+					"parameters": {
+						"variable": "GoodItem",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 771889051114858,
+					"parameters": {
+						"animation": "\"handOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hand",
+					"sid": 271891775961692,
+					"parameters": {
+						"instance-variable": "Release",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "food",
+					"sid": 552275471039036,
+					"parameters": {
+						"width": "57.552",
+						"height": "27.144"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food",
+					"sid": 793265401720493,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 119092988970595
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hand",
+					"sid": 394741178738114,
+					"parameters": {
+						"instance-variable": "Release"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 395507982641287,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "hand",
+					"sid": 558355136774378,
+					"parameters": {
+						"object": "food",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "food",
+					"sid": 877718123936224,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 530271959678910,
+					"parameters": {
+						"variable": "GoodItem",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 142368182887033,
+					"parameters": {
+						"animation": "\"handOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hand",
+					"sid": 505579598289680,
+					"parameters": {
+						"instance-variable": "Release",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "food",
+					"sid": 183993951312155,
+					"parameters": {
+						"width": "57.552",
+						"height": "27.144"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food",
+					"sid": 552621541142058,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 724594823778043
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hand",
+					"sid": 420494177646500,
+					"parameters": {
+						"instance-variable": "Release"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 178820387394315,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "hand",
+					"sid": 919046422322918,
+					"parameters": {
+						"object": "food",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "food",
+					"sid": 556370014458620,
+					"parameters": {
+						"animation": "\"Animation 4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 863771811566746,
+					"parameters": {
+						"variable": "GoodItem",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 629737468275439,
+					"parameters": {
+						"animation": "\"handOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hand",
+					"sid": 773421425407681,
+					"parameters": {
+						"instance-variable": "Release",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "food",
+					"sid": 393802520934724,
+					"parameters": {
+						"width": "57.552",
+						"height": "27.144"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food",
+					"sid": 303773555320834,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 377453980974785
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hand",
+					"sid": 996222727825425,
+					"parameters": {
+						"instance-variable": "Release"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 179724017974008,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "hand",
+					"sid": 767628203268196,
+					"parameters": {
+						"object": "food",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "food",
+					"sid": 401482568343136,
+					"parameters": {
+						"animation": "\"Animation 5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 402657805477919,
+					"parameters": {
+						"variable": "GoodItem",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 461118375684207,
+					"parameters": {
+						"animation": "\"handOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hand",
+					"sid": 882778717610133,
+					"parameters": {
+						"instance-variable": "Release",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "food",
+					"sid": 810329001729730,
+					"parameters": {
+						"width": "57.552",
+						"height": "27.144"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food",
+					"sid": 696267101138422,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 199180930125819
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hand",
+					"sid": 177096489159635,
+					"parameters": {
+						"instance-variable": "Release"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 602029790158749,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "hand",
+					"sid": 723719178360896,
+					"parameters": {
+						"object": "food",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "food",
+					"sid": 968593676774015,
+					"parameters": {
+						"animation": "\"Animation 6\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 558463357272111,
+					"parameters": {
+						"variable": "GoodItem",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 599306534901131,
+					"parameters": {
+						"animation": "\"handOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hand",
+					"sid": 255352026805853,
+					"parameters": {
+						"instance-variable": "Release",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "food",
+					"sid": 414019565148851,
+					"parameters": {
+						"width": "57.552",
+						"height": "27.144"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "food",
+					"sid": 109051015634494,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 484665863637294
 		},
 		{
 			"eventType": "block",
@@ -267,6 +800,14 @@
 						"comparison": 3,
 						"value": "0"
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 956033458066406,
+					"parameters": {
+						"variable": "GoodItem"
+					}
 				}
 			],
 			"actions": [
@@ -281,6 +822,42 @@
 				}
 			],
 			"sid": 897422280429958
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 619935982480007,
+					"parameters": {
+						"variable": "foodOnScreenAmount",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 410127574492660,
+					"parameters": {
+						"variable": "GoodItem"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 908234418570736,
+					"parameters": {
+						"animation": "\"Yuck!\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 503717807425015
 		},
 		{
 			"eventType": "block",
@@ -335,6 +912,16 @@
 						"comparison": 3,
 						"width": "3"
 					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 238422056558638,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -346,9 +933,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 789038596329254,
+					"sid": 177967943303407,
 					"parameters": {
-						"audio-file": "HICCUP",
+						"audio-file": "Nom Nom nom sound effect",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -370,9 +957,363 @@
 					"parameters": {
 						"text": "\"Score = \" & bunny.Score"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 266893734369552,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
 				}
 			],
 			"sid": 914273516186171
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "food",
+					"sid": 492743997733680,
+					"parameters": {
+						"comparison": 3,
+						"width": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 873647972069622,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food",
+					"sid": 330393489354509
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 764951854759882,
+					"parameters": {
+						"audio-file": "Nom Nom nom sound effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "bunny",
+					"sid": 536473357761625,
+					"parameters": {
+						"instance-variable": "Score",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 301949840611880,
+					"parameters": {
+						"text": "\"Score = \" & bunny.Score"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 198057692304345,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
+				}
+			],
+			"sid": 941119167181337
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "food",
+					"sid": 368895768305570,
+					"parameters": {
+						"comparison": 3,
+						"width": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 415922153603234,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food",
+					"sid": 318707986920820
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 571104156325086,
+					"parameters": {
+						"audio-file": "Nom Nom nom sound effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "bunny",
+					"sid": 791640125509104,
+					"parameters": {
+						"instance-variable": "Score",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 315720614543032,
+					"parameters": {
+						"text": "\"Score = \" & bunny.Score"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 402996951092740,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
+				}
+			],
+			"sid": 200673652538615
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "food",
+					"sid": 186319818912702,
+					"parameters": {
+						"comparison": 3,
+						"width": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 159478403193329,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food",
+					"sid": 208867654030799
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 660486088148040,
+					"parameters": {
+						"audio-file": "Yuck",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "bunny",
+					"sid": 774922083322265,
+					"parameters": {
+						"instance-variable": "Score",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 568692460197816,
+					"parameters": {
+						"text": "\"Score = \" & bunny.Score"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 848975226472931,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
+				}
+			],
+			"sid": 301015666778134
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "food",
+					"sid": 965042034295635,
+					"parameters": {
+						"comparison": 3,
+						"width": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 483768688868478,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food",
+					"sid": 863360574648320
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 963767146420241,
+					"parameters": {
+						"audio-file": "Yuck",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "bunny",
+					"sid": 226591631870224,
+					"parameters": {
+						"instance-variable": "Score",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 908319130086829,
+					"parameters": {
+						"text": "\"Score = \" & bunny.Score"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 373279555883505,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
+				}
+			],
+			"sid": 110542282229799
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "food",
+					"sid": 883794079831620,
+					"parameters": {
+						"comparison": 3,
+						"width": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 820588251803419,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food",
+					"sid": 149917125958495
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 432330062676053,
+					"parameters": {
+						"audio-file": "Yuck",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "bunny",
+					"sid": 728025181593811,
+					"parameters": {
+						"instance-variable": "Score",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 147910148535497,
+					"parameters": {
+						"text": "\"Score = \" & bunny.Score"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 689926652461430,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
+				}
+			],
+			"sid": 482788499753418
 		},
 		{
 			"eventType": "block",

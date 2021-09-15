@@ -78,7 +78,7 @@
 					},
 					"uid": 2,
 					"instanceVariables": {
-						"Score": 0
+						"Score": 10
 					},
 					"behaviors": {},
 					"world": {

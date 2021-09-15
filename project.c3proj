@@ -117,6 +117,16 @@
 					"name": "BLIP2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 414782323902734
+				},
+				{
+					"name": "Nom Nom nom sound effect.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 609445535517635
+				},
+				{
+					"name": "Yuck.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 441400851228586
 				}
 			],
 			"subfolders": []
