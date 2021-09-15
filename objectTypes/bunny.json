@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 940579050120407,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Score",
+			"type": "number",
+			"desc": "Adds/Subtracts points based on foods eaten",
+			"sid": 235012415094377
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

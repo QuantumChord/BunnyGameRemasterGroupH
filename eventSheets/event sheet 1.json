@@ -353,6 +353,23 @@
 						"volume": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "bunny",
+					"sid": 294145170000168,
+					"parameters": {
+						"instance-variable": "Score",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 367799207762801,
+					"parameters": {
+						"text": "\"Score = \" & bunny.Score"
+					}
 				}
 			],
 			"sid": 914273516186171
