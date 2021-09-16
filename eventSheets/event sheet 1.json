@@ -32,6 +32,16 @@
 			"sid": 953358127560023
 		},
 		{
+			"eventType": "variable",
+			"name": "CanFeed",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 789170967816988
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -148,6 +158,14 @@
 					"id": "on-any-touch-start",
 					"objectClass": "Touch",
 					"sid": 913837145337760
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 951075225282716,
+					"parameters": {
+						"variable": "CanFeed"
+					}
 				}
 			],
 			"actions": [
@@ -169,6 +187,32 @@
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 162630545328360,
+					"parameters": {
+						"variable": "CanFeed",
+						"value": "false"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 598603346794555,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 126048843745311,
+					"parameters": {
+						"variable": "CanFeed",
+						"value": "true"
 					}
 				}
 			],
