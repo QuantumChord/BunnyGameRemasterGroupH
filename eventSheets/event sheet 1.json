@@ -42,6 +42,16 @@
 			"sid": 789170967816988
 		},
 		{
+			"eventType": "variable",
+			"name": "IsEaten",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 854026536122145
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -146,6 +156,15 @@
 					"parameters": {
 						"instance-variable": "Move",
 						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 697753671962008,
+					"parameters": {
+						"variable": "IsEaten",
+						"value": "true"
 					}
 				}
 			],
@@ -782,6 +801,15 @@
 					"id": "destroy",
 					"objectClass": "food",
 					"sid": 117480765669805
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 456857763450483,
+					"parameters": {
+						"variable": "RandomizationValue",
+						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
 				}
 			],
 			"sid": 490908818467884
@@ -891,6 +919,14 @@
 						"variable": "GoodItem"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 861516475973957,
+					"parameters": {
+						"variable": "IsEaten"
+					}
 				}
 			],
 			"actions": [
@@ -905,6 +941,51 @@
 				}
 			],
 			"sid": 503717807425015
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 664283839084107,
+					"parameters": {
+						"variable": "foodOnScreenAmount",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 783037602265982,
+					"parameters": {
+						"variable": "GoodItem"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 936900247909634,
+					"parameters": {
+						"variable": "IsEaten"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 445207788108843,
+					"parameters": {
+						"animation": "\"MouthClosed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 241335327021005
 		},
 		{
 			"eventType": "block",
@@ -1013,6 +1094,23 @@
 						"variable": "RandomizationValue",
 						"value": "choose(0, 1, 2, 3, 4, 5)"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 996881821041867,
+					"parameters": {
+						"seconds": "0.7"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 642504104774547,
+					"parameters": {
+						"variable": "IsEaten",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 914273516186171
@@ -1081,6 +1179,23 @@
 					"parameters": {
 						"variable": "RandomizationValue",
 						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 446419785317972,
+					"parameters": {
+						"seconds": "0.7"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 615731861282476,
+					"parameters": {
+						"variable": "IsEaten",
+						"value": "false"
 					}
 				}
 			],
@@ -1151,6 +1266,23 @@
 						"variable": "RandomizationValue",
 						"value": "choose(0, 1, 2, 3, 4, 5)"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 554502422537008,
+					"parameters": {
+						"seconds": "0.7"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 146111265148529,
+					"parameters": {
+						"variable": "IsEaten",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 200673652538615
@@ -1219,6 +1351,23 @@
 					"parameters": {
 						"variable": "RandomizationValue",
 						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 787282205697950,
+					"parameters": {
+						"seconds": "0.7"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 272998338151328,
+					"parameters": {
+						"variable": "IsEaten",
+						"value": "false"
 					}
 				}
 			],
@@ -1289,6 +1438,23 @@
 						"variable": "RandomizationValue",
 						"value": "choose(0, 1, 2, 3, 4, 5)"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 722052119399804,
+					"parameters": {
+						"seconds": "0.7"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 608163595392679,
+					"parameters": {
+						"variable": "IsEaten",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 110542282229799
@@ -1357,6 +1523,23 @@
 					"parameters": {
 						"variable": "RandomizationValue",
 						"value": "choose(0, 1, 2, 3, 4, 5)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 167199595286267,
+					"parameters": {
+						"seconds": "0.7"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 285405683890460,
+					"parameters": {
+						"variable": "IsEaten",
+						"value": "false"
 					}
 				}
 			],
