@@ -155,9 +155,12 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-touch-start",
-					"objectClass": "Touch",
-					"sid": 913837145337760
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 905281717072753,
+					"parameters": {
+						"interval-seconds": "5"
+					}
 				},
 				{
 					"id": "compare-boolean-eventvar",
@@ -1363,9 +1366,12 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-touch-end",
-					"objectClass": "Touch",
-					"sid": 768806402266185
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 118606340922326,
+					"parameters": {
+						"interval-seconds": "5"
+					}
 				}
 			],
 			"actions": [
