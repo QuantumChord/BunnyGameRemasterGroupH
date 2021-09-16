@@ -1,0 +1,17 @@
+{
+	"name": "BunnyFamily",
+	"plugin-id": "Sprite",
+	"sid": 875124595862907,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 518483500296137
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"bunny"
+	]
+}
