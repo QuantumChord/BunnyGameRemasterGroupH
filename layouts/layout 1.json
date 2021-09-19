@@ -114,7 +114,7 @@
 					"type": "hand",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "handWithFood",
+						"initial-animation": "Fridge",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -140,10 +140,10 @@
 						}
 					},
 					"world": {
-						"x": 524,
-						"y": 259,
-						"width": 109,
-						"height": 106,
+						"x": 460,
+						"y": 183,
+						"width": 220.53555248714625,
+						"height": 214.46576663887618,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -64,10 +64,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 303819627479895,
+					"sid": 346776210155358,
 					"parameters": {
 						"variable": "RandomizationValue",
-						"value": "choose(0, 1, 2, 3, 4 ,5)"
+						"value": "choose(0, 1, 2, 3, 4, 5)"
 					}
 				},
 				{
@@ -176,9 +176,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 905281717072753,
+					"sid": 645522540828521,
 					"parameters": {
-						"interval-seconds": "5"
+						"interval-seconds": "4"
 					}
 				},
 				{
@@ -203,11 +203,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 922030052892147,
+					"sid": 304718834608827,
 					"parameters": {
 						"audio-file": "BLIP2",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-10",
 						"tag-optional": "\"\""
 					}
 				},
@@ -276,6 +276,15 @@
 				},
 				{
 					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 394810885748135,
+					"parameters": {
+						"animation": "\"Fridge\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
 					"objectClass": "food",
 					"sid": 507307001857873,
 					"parameters": {
@@ -290,15 +299,6 @@
 					"parameters": {
 						"variable": "GoodItem",
 						"value": "true"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 669971599223793,
-					"parameters": {
-						"animation": "\"handOpen\"",
-						"from": "beginning"
 					}
 				},
 				{
@@ -367,6 +367,15 @@
 				},
 				{
 					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 887634597800650,
+					"parameters": {
+						"animation": "\"Fridge\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
 					"objectClass": "food",
 					"sid": 344144755554803,
 					"parameters": {
@@ -381,15 +390,6 @@
 					"parameters": {
 						"variable": "GoodItem",
 						"value": "true"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 771889051114858,
-					"parameters": {
-						"animation": "\"handOpen\"",
-						"from": "beginning"
 					}
 				},
 				{
@@ -458,6 +458,15 @@
 				},
 				{
 					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 492450579965467,
+					"parameters": {
+						"animation": "\"Fridge\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
 					"objectClass": "food",
 					"sid": 877718123936224,
 					"parameters": {
@@ -472,15 +481,6 @@
 					"parameters": {
 						"variable": "GoodItem",
 						"value": "true"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 142368182887033,
-					"parameters": {
-						"animation": "\"handOpen\"",
-						"from": "beginning"
 					}
 				},
 				{
@@ -549,6 +549,15 @@
 				},
 				{
 					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 895182671431566,
+					"parameters": {
+						"animation": "\"Fridge\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
 					"objectClass": "food",
 					"sid": 556370014458620,
 					"parameters": {
@@ -563,15 +572,6 @@
 					"parameters": {
 						"variable": "GoodItem",
 						"value": "false"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 629737468275439,
-					"parameters": {
-						"animation": "\"handOpen\"",
-						"from": "beginning"
 					}
 				},
 				{
@@ -640,6 +640,15 @@
 				},
 				{
 					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 967312242505178,
+					"parameters": {
+						"animation": "\"Fridge\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
 					"objectClass": "food",
 					"sid": 401482568343136,
 					"parameters": {
@@ -654,15 +663,6 @@
 					"parameters": {
 						"variable": "GoodItem",
 						"value": "false"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 461118375684207,
-					"parameters": {
-						"animation": "\"handOpen\"",
-						"from": "beginning"
 					}
 				},
 				{
@@ -731,6 +731,15 @@
 				},
 				{
 					"id": "set-animation",
+					"objectClass": "hand",
+					"sid": 956418332456754,
+					"parameters": {
+						"animation": "\"Fridge\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
 					"objectClass": "food",
 					"sid": 968593676774015,
 					"parameters": {
@@ -745,15 +754,6 @@
 					"parameters": {
 						"variable": "GoodItem",
 						"value": "false"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 599306534901131,
-					"parameters": {
-						"animation": "\"handOpen\"",
-						"from": "beginning"
 					}
 				},
 				{
@@ -1551,9 +1551,10 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 118606340922326,
+					"sid": 708553621033297,
+					"disabled": true,
 					"parameters": {
-						"interval-seconds": "5"
+						"interval-seconds": "6"
 					}
 				}
 			],
@@ -1561,14 +1562,15 @@
 				{
 					"id": "set-animation",
 					"objectClass": "hand",
-					"sid": 505091153265800,
+					"sid": 263088379439616,
 					"parameters": {
 						"animation": "\"handWithFood\"",
-						"from": "beginning"
+						"from": "current-frame"
 					}
 				}
 			],
-			"sid": 465553139585428
+			"sid": 465553139585428,
+			"disabled": true
 		}
 	],
 	"sid": 516847117888192
