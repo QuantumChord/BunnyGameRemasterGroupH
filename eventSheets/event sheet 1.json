@@ -73,9 +73,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 242958237169430,
+					"sid": 420596943230252,
 					"parameters": {
-						"text": "\"Score = \" & bunny.Score"
+						"text": "\"Score = Welcome... Friend\""
 					}
 				},
 				{
@@ -1099,9 +1099,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 367799207762801,
+					"sid": 426547612544647,
 					"parameters": {
-						"text": "\"Score = \" & bunny.Score"
+						"text": "\"Score = This bunny is made up of lights and code... can we be the same to higher beings?\""
 					}
 				},
 				{
@@ -1185,9 +1185,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 301949840611880,
+					"sid": 223943569954843,
 					"parameters": {
-						"text": "\"Score = \" & bunny.Score"
+						"text": "\"Score = What if we have always been watched from the stars?\""
 					}
 				},
 				{
@@ -1271,9 +1271,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 315720614543032,
+					"sid": 601268807693704,
 					"parameters": {
-						"text": "\"Score = \" & bunny.Score"
+						"text": "\"Score = What is real?\""
 					}
 				},
 				{
@@ -1357,9 +1357,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 568692460197816,
+					"sid": 440095375096593,
 					"parameters": {
-						"text": "\"Score = \" & bunny.Score"
+						"text": "\"Score = Are you real?\""
 					}
 				},
 				{
@@ -1443,9 +1443,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 908319130086829,
+					"sid": 395351914674336,
 					"parameters": {
-						"text": "\"Score = \" & bunny.Score"
+						"text": "\"Score = What happens after death?\""
 					}
 				},
 				{
@@ -1529,9 +1529,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 147910148535497,
+					"sid": 828138622563621,
 					"parameters": {
-						"text": "\"Score = \" & bunny.Score"
+						"text": "\"Score = Am I real?\""
 					}
 				},
 				{
@@ -1562,33 +1562,6 @@
 				}
 			],
 			"sid": 482788499753418
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 708553621033297,
-					"disabled": true,
-					"parameters": {
-						"interval-seconds": "6"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 263088379439616,
-					"parameters": {
-						"animation": "\"handWithFood\"",
-						"from": "current-frame"
-					}
-				}
-			],
-			"sid": 465553139585428,
-			"disabled": true
 		},
 		{
 			"eventType": "block",
