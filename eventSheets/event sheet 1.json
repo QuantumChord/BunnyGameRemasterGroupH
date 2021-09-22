@@ -241,9 +241,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 304718834608827,
+					"sid": 914968377763606,
 					"parameters": {
-						"audio-file": "BLIP2",
+						"audio-file": "freezer-open-1",
 						"loop": "not-looping",
 						"volume": "-10",
 						"tag-optional": "\"\""
@@ -261,9 +261,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 865140785665867,
+					"sid": 717871002309470,
 					"parameters": {
-						"seconds": "1.5"
+						"seconds": "3"
 					}
 				},
 				{
@@ -1357,11 +1357,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 660486088148040,
+					"sid": 286242986457330,
 					"parameters": {
 						"audio-file": "Yuck",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-15",
 						"tag-optional": "\"\""
 					}
 				},
@@ -1443,11 +1443,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 963767146420241,
+					"sid": 805321300189573,
 					"parameters": {
 						"audio-file": "Yuck",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-15",
 						"tag-optional": "\"\""
 					}
 				},
@@ -1529,11 +1529,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 432330062676053,
+					"sid": 599907941104566,
 					"parameters": {
 						"audio-file": "Yuck",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-15",
 						"tag-optional": "\"\""
 					}
 				},

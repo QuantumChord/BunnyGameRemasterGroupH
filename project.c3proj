@@ -158,6 +158,16 @@
 					"name": "Yuck.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 441400851228586
+				},
+				{
+					"name": "freezer-close-1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 206424468351987
+				},
+				{
+					"name": "freezer-open-1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 143566226114629
 				}
 			],
 			"subfolders": []
@@ -269,21 +279,21 @@
 		"viewportFit": "auto",
 		"backgroundColor": [
 			1,
-			0.803921568627451,
-			0.9411764705882353,
+			0.4117647058823529,
+			1,
 			0
 		],
 		"splashColor": [
 			1,
-			0.803921568627451,
-			0.9411764705882353,
+			0.4117647058823529,
+			1,
 			0
 		],
 		"useThemeColor": true,
 		"themeColor": [
 			1,
-			0.803921568627451,
-			0.9411764705882353,
+			0.4117647058823529,
+			1,
 			0
 		],
 		"orientations": "landscape",
