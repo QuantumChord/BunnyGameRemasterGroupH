@@ -95,6 +95,15 @@
 						"instance-variable": "Score",
 						"value": "5"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 625854964540398,
+					"parameters": {
+						"variable": "CanFeed",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 966371072192293
