@@ -105,7 +105,8 @@
 			"Score",
 			"WinLoseText",
 			"AgainButton",
-			"InvisBarrier"
+			"InvisBarrier",
+			"sprite3animation"
 		],
 		"subfolders": []
 	},
