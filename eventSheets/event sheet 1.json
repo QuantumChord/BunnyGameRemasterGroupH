@@ -201,11 +201,12 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 645522540828521,
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 618624104143236,
 					"parameters": {
-						"interval-seconds": "4"
+						"mouse-button": "left",
+						"click-type": "clicked"
 					}
 				},
 				{

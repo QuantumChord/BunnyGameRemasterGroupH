@@ -18,14 +18,14 @@
 			{
 				"frames": [
 					{
-						"width": 199,
-						"height": 235,
+						"width": 218,
+						"height": 227,
 						"originX": 0.5025125628140703,
 						"originY": 0.502127659574468,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5939402,
+						"imageSpriteId": 8650774,
 						"collisionPoly": {
 							"points": [
 								0.005025125628140704,
@@ -53,14 +53,14 @@
 			{
 				"frames": [
 					{
-						"width": 199,
-						"height": 235,
+						"width": 218,
+						"height": 227,
 						"originX": 0.5025125628140703,
 						"originY": 0.502127659574468,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2502687,
+						"imageSpriteId": 2477099,
 						"collisionPoly": {
 							"points": [
 								0.005025125628140704,
@@ -88,14 +88,14 @@
 			{
 				"frames": [
 					{
-						"width": 199,
-						"height": 235,
+						"width": 218,
+						"height": 227,
 						"originX": 0.5025125628140703,
 						"originY": 0.502127659574468,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5194131,
+						"imageSpriteId": 8661557,
 						"collisionPoly": {
 							"points": [
 								0.005025125628140704,
@@ -114,6 +114,92 @@
 				],
 				"sid": 343161186043507,
 				"name": "Yuck!",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 218,
+						"height": 227,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3054488,
+						"collisionPoly": {
+							"points": [
+								0.06422018348623854,
+								0.06167400881057269,
+								0.5,
+								0.11894273127753303,
+								0.9495412844036697,
+								0.04405286343612335,
+								0.9220183486238532,
+								0.5,
+								0.9541284403669725,
+								0.9559471365638766,
+								0.5,
+								0.8898678414096917,
+								0.24311926605504589,
+								0.762114537444934,
+								0.16972477064220184,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 955627117239953,
+				"name": "Winner",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 218,
+						"height": 227,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3796552,
+						"collisionPoly": {
+							"points": [
+								0.06422018348623854,
+								0.06167400881057269,
+								0.5,
+								0.11894273127753303,
+								0.9495412844036697,
+								0.04405286343612335,
+								0.9220183486238532,
+								0.5,
+								0.9541284403669725,
+								0.9559471365638766,
+								0.5,
+								0.8898678414096917,
+								0.24311926605504589,
+								0.762114537444934,
+								0.16972477064220184,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 662511798464777,
+				"name": "Loser",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
