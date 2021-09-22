@@ -1,0 +1,89 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "isWon",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 884956123289033
+		},
+		{
+			"eventType": "variable",
+			"name": "toWin",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 421471601204983
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 968915000582677
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "WinLoseText",
+					"sid": 194120479611298,
+					"parameters": {
+						"text": "\"YOU WIN!\""
+					}
+				}
+			],
+			"sid": 262505553069577
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 653641437101350
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "WinLoseText",
+					"sid": 955244890432716,
+					"parameters": {
+						"text": "\"YOU LOSE\""
+					}
+				}
+			],
+			"sid": 215195563702614
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "AgainButton",
+					"sid": 571885313677878
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 469688868442173,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 923019616103446
+		}
+	],
+	"sid": 539219447540455
+}

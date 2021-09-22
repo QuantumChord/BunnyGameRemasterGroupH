@@ -78,7 +78,7 @@
 					},
 					"uid": 2,
 					"instanceVariables": {
-						"Score": 10
+						"Score": 5
 					},
 					"behaviors": {
 						"8Direction": {
@@ -184,35 +184,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Sprite3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 12,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 334,
-						"y": 425,
-						"width": 352,
-						"height": 118,
-						"originX": 0.553072625698324,
-						"originY": 0.78,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 535515908187882,
@@ -250,8 +221,8 @@
 					"properties": {
 						"text": "Score = 0",
 						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
+						"font": "Cubano-Regular",
+						"size": 16.499999999999993,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,

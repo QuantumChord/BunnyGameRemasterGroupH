@@ -77,6 +77,24 @@
 					"parameters": {
 						"text": "\"Score = \" & bunny.Score"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 912049763038600,
+					"parameters": {
+						"variable": "toWin",
+						"value": "choose(10, 20, 30)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "bunny",
+					"sid": 587245640483958,
+					"parameters": {
+						"instance-variable": "Score",
+						"value": "5"
+					}
 				}
 			],
 			"sid": 966371072192293
@@ -1571,6 +1589,76 @@
 			],
 			"sid": 465553139585428,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "bunny",
+					"sid": 590552398146321,
+					"parameters": {
+						"instance-variable": "Score",
+						"comparison": 5,
+						"value": "toWin"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 644189514162940,
+					"parameters": {
+						"variable": "isWon",
+						"value": "true"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 282820841312506,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 822784340843008
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "bunny",
+					"sid": 574585624750414,
+					"parameters": {
+						"instance-variable": "Score",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 415083212459362,
+					"parameters": {
+						"variable": "isWon",
+						"value": "false"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 432985538088973,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 199345427320045
 		}
 	],
 	"sid": 516847117888192
