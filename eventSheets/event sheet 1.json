@@ -156,9 +156,9 @@
 				{
 					"id": "set-x",
 					"objectClass": "food",
-					"sid": 707702139814357,
+					"sid": 314263522675425,
 					"parameters": {
-						"x": "food.X-2"
+						"x": "food.X-0.5"
 					}
 				}
 			],
