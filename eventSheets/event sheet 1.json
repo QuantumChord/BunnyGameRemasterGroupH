@@ -73,9 +73,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 420596943230252,
+					"sid": 997684334174015,
 					"parameters": {
-						"text": "\"Score = Welcome... Friend\""
+						"text": "\"Welcome... Friend\""
 					}
 				},
 				{
@@ -90,10 +90,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "bunny",
-					"sid": 587245640483958,
+					"sid": 607177366405383,
 					"parameters": {
 						"instance-variable": "Score",
-						"value": "5"
+						"value": "6"
 					}
 				},
 				{
@@ -1109,9 +1109,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 426547612544647,
+					"sid": 780723014528085,
 					"parameters": {
-						"text": "\"Score = This bunny is made up of lights and code... can we be the same to higher beings?\""
+						"text": "\"This bunny is made up of lights and code... can we be the same to higher beings?\""
 					}
 				},
 				{
@@ -1195,9 +1195,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 223943569954843,
+					"sid": 464932200077896,
 					"parameters": {
-						"text": "\"Score = What if we have always been watched from the stars?\""
+						"text": "\"What if we have always been watched from the stars?\""
 					}
 				},
 				{
@@ -1281,9 +1281,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 601268807693704,
+					"sid": 997241227627724,
 					"parameters": {
-						"text": "\"Score = What is real?\""
+						"text": "\"What is real?\""
 					}
 				},
 				{
@@ -1367,9 +1367,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 440095375096593,
+					"sid": 945333595442302,
 					"parameters": {
-						"text": "\"Score = Are you real?\""
+						"text": "\"Are you real?\""
 					}
 				},
 				{
@@ -1453,9 +1453,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 395351914674336,
+					"sid": 513654811999859,
 					"parameters": {
-						"text": "\"Score = What happens after death?\""
+						"text": "\"What happens after death?\""
 					}
 				},
 				{
@@ -1539,9 +1539,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Score",
-					"sid": 828138622563621,
+					"sid": 971251942900537,
 					"parameters": {
-						"text": "\"Score = Am I real?\""
+						"text": "\"Am I real?\""
 					}
 				},
 				{
