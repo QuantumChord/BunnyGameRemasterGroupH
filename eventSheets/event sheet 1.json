@@ -52,6 +52,16 @@
 			"sid": 854026536122145
 		},
 		{
+			"eventType": "variable",
+			"name": "Score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 479247445849180
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -88,11 +98,11 @@
 					}
 				},
 				{
-					"id": "set-instvar-value",
-					"objectClass": "bunny",
-					"sid": 607177366405383,
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 754729761115676,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"value": "6"
 					}
 				},
@@ -146,9 +156,9 @@
 				{
 					"id": "set-x",
 					"objectClass": "food",
-					"sid": 552768763738622,
+					"sid": 707702139814357,
 					"parameters": {
-						"x": "food.X-4"
+						"x": "food.X-2"
 					}
 				}
 			],
@@ -1098,11 +1108,11 @@
 					}
 				},
 				{
-					"id": "add-to-instvar",
-					"objectClass": "bunny",
-					"sid": 294145170000168,
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 852611590417620,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"value": "1"
 					}
 				},
@@ -1184,11 +1194,11 @@
 					}
 				},
 				{
-					"id": "add-to-instvar",
-					"objectClass": "bunny",
-					"sid": 536473357761625,
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 938146150502108,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"value": "3"
 					}
 				},
@@ -1270,11 +1280,11 @@
 					}
 				},
 				{
-					"id": "add-to-instvar",
-					"objectClass": "bunny",
-					"sid": 791640125509104,
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 365864011179230,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"value": "5"
 					}
 				},
@@ -1356,11 +1366,11 @@
 					}
 				},
 				{
-					"id": "subtract-from-instvar",
-					"objectClass": "bunny",
-					"sid": 774922083322265,
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 149645461500287,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"value": "1"
 					}
 				},
@@ -1442,11 +1452,11 @@
 					}
 				},
 				{
-					"id": "subtract-from-instvar",
-					"objectClass": "bunny",
-					"sid": 226591631870224,
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 878060647441379,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"value": "3"
 					}
 				},
@@ -1528,11 +1538,11 @@
 					}
 				},
 				{
-					"id": "subtract-from-instvar",
-					"objectClass": "bunny",
-					"sid": 728025181593811,
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 892855316008551,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"value": "5"
 					}
 				},
@@ -1577,11 +1587,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "bunny",
-					"sid": 590552398146321,
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 505232914815587,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"comparison": 5,
 						"value": "toWin"
 					}
@@ -1612,11 +1622,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "bunny",
-					"sid": 574585624750414,
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 166850395152287,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"comparison": 3,
 						"value": "0"
 					}
