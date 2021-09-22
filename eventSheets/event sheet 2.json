@@ -166,11 +166,11 @@
 					}
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "bunny",
-					"sid": 644484913125786,
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 594791640511555,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"comparison": 2,
 						"value": "0"
 					}
@@ -216,11 +216,11 @@
 					}
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "bunny",
-					"sid": 292475924035921,
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 589015001632055,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"comparison": 2,
 						"value": "0"
 					}
@@ -266,11 +266,11 @@
 					}
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "bunny",
-					"sid": 535926138996406,
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 167846421848989,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"comparison": 2,
 						"value": "0"
 					}
@@ -306,11 +306,11 @@
 					"isInverted": true
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "bunny",
-					"sid": 241274826929845,
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 638731350700674,
 					"parameters": {
-						"instance-variable": "Score",
+						"variable": "Score",
 						"comparison": 0,
 						"value": "0"
 					}
@@ -320,9 +320,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "WinLoseText",
-					"sid": 204402481883519,
+					"sid": 832168638138284,
 					"parameters": {
-						"text": "\"Burger but cold\""
+						"text": "\"Burger but cold lol\""
 					}
 				}
 			],
