@@ -28,15 +28,33 @@
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 968915000582677
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 334501295092006,
+					"parameters": {
+						"variable": "isWon"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 288715456667288,
+					"parameters": {
+						"variable": "toWin",
+						"comparison": 0,
+						"value": "10"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-text",
 					"objectClass": "WinLoseText",
-					"sid": 194120479611298,
+					"sid": 318301189222469,
 					"parameters": {
-						"text": "\"YOU WIN!\""
+						"text": "\"I've dreamt of my mother today. She's happy. While she has passed, I believe my dreams have a connection to heaven. Have you had dreams like that? Then maybe you have that power too, or maybe it is illusions.\""
 					}
 				}
 			],
@@ -48,20 +66,267 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 653641437101350
+					"sid": 519545240003028
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 690510401282823,
+					"parameters": {
+						"variable": "isWon"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 233081411865856,
+					"parameters": {
+						"variable": "toWin",
+						"comparison": 0,
+						"value": "20"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-text",
 					"objectClass": "WinLoseText",
-					"sid": 955244890432716,
+					"sid": 106456939955870,
 					"parameters": {
-						"text": "\"YOU LOSE\""
+						"text": "\"Soulmates are a strange concept. The fact that you could be bonded to someone down to their very cores, already decided, seems so unreal. I've yet to find mine, but I hope my soul will reach out soon enough.\""
+					}
+				}
+			],
+			"sid": 808939662021721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 594181678767901
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 955415834152678,
+					"parameters": {
+						"variable": "isWon"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 822653939658641,
+					"parameters": {
+						"variable": "toWin",
+						"comparison": 0,
+						"value": "30"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "WinLoseText",
+					"sid": 527664409099558,
+					"parameters": {
+						"text": "\"These carrots are not real... this game is not real... but it is real work, you are real work, and that work is blossoming. Your future is not set yet, but you can set it and unset it at your leisure, keep track of that.\""
+					}
+				}
+			],
+			"sid": 323292690368840
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 653641437101350
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 156273110198568,
+					"parameters": {
+						"variable": "isWon"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 843502492681046,
+					"parameters": {
+						"variable": "toWin",
+						"comparison": 0,
+						"value": "10"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "bunny",
+					"sid": 644484913125786,
+					"parameters": {
+						"instance-variable": "Score",
+						"comparison": 2,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "WinLoseText",
+					"sid": 718825553695067,
+					"parameters": {
+						"text": "\"Death is only an escape from the harshness of reality, but what lays beyond death? Perhaps an even deeper pit of cruelity. Only I know what lays within that.\""
 					}
 				}
 			],
 			"sid": 215195563702614
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 946434638126340
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 108559657162487,
+					"parameters": {
+						"variable": "isWon"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 265888154874754,
+					"parameters": {
+						"variable": "toWin",
+						"comparison": 0,
+						"value": "20"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "bunny",
+					"sid": 292475924035921,
+					"parameters": {
+						"instance-variable": "Score",
+						"comparison": 2,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "WinLoseText",
+					"sid": 561962099570402,
+					"parameters": {
+						"text": "\"What lies within our nightmares is only our minds torturing ourselves for the sake that we have done wrong. Have you had a nightmare recently?\""
+					}
+				}
+			],
+			"sid": 698142631965314
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 202156106331884
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 939633867518292,
+					"parameters": {
+						"variable": "isWon"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 461655474214134,
+					"parameters": {
+						"variable": "toWin",
+						"comparison": 0,
+						"value": "30"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "bunny",
+					"sid": 535926138996406,
+					"parameters": {
+						"instance-variable": "Score",
+						"comparison": 2,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "WinLoseText",
+					"sid": 624076443993943,
+					"parameters": {
+						"text": "\"I'm sorry, you could not save me. Just hope that you can save yourself someday, I'll be there, maybe to push you to your death.\""
+					}
+				}
+			],
+			"sid": 484282922896270
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 390718322869597
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 471018023849698,
+					"parameters": {
+						"variable": "isWon"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "bunny",
+					"sid": 241274826929845,
+					"parameters": {
+						"instance-variable": "Score",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "WinLoseText",
+					"sid": 204402481883519,
+					"parameters": {
+						"text": "\"Burger but cold\""
+					}
+				}
+			],
+			"sid": 445873552354137
 		},
 		{
 			"eventType": "block",
